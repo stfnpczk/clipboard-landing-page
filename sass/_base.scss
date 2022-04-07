@@ -1,0 +1,39 @@
+$strong-cyan: hsl(171, 66%, 44%);
+$light-blue: hsl(233, 100%, 69%);
+$dark-grayish: hsl(210, 10%, 33%);
+$grayish-blue: hsl(201, 11%, 66%);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+body {
+    min-height: 100vh;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+    // font-size: 18px;
+}
+
+h1, h2 ,h3, h4, h5, h6 {
+    color: $dark-grayish;
+    // font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 600;
+
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: $grayish-blue;
+    letter-spacing: 0.12px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+  }
+
+
+$tablet: 768px;
+$desktop: 1024px;
