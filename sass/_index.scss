@@ -1,7 +1,10 @@
 /*----------------------------
       layout
  ----------------------------*/
-
+ main {
+  margin: 0 32px;
+  text-align: center;
+}
 /*----------------------------
       header section
 ----------------------------*/
@@ -39,6 +42,39 @@
     background: #6174ff;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.0988035),
       inset 0px -3px 0px rgba(0, 0, 0, 0.151333);
+  }
+}
+
+/*----------------------------
+      snippets section 
+----------------------------*/
+.snippets {
+  &__heading {
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: -0.4565216898918152px;
+  }
+
+  &__paragraph-one {
+    margin: 16px 0 65px;
+  }
+
+  &__image-container {
+    margin: 0 0 56px;
+  }
+
+  // &__snippets-featuers {
+
+  // }
+
+  &__subheading {
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.3913043141365051px;
+  }
+
+  &__paragraph-two {
+    margin: 10px 0 48px;
   }
 }
 
