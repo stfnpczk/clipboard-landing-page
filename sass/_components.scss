@@ -1,1 +1,15 @@
 // reusable components
+
+.button {
+  padding: 13px 36px;
+  border-radius: 28px;
+
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: white;
+  transition: 0.3s ease-in;
+  width: 240px; //use clamp eventually
+}
