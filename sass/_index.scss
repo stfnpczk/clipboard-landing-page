@@ -2,7 +2,7 @@
       layout
  ----------------------------*/
  main {
-  margin: 0 32px;
+  margin: 0 32px 170px;
   text-align: center;
 }
 /*----------------------------
@@ -107,6 +107,15 @@
     align-items: center;
     gap: 59px;
     margin: 131px 0 170px;
+  }
+}
+
+/*----------------------------
+      cta section 
+----------------------------*/
+.cta {
+  &__paragraph {
+    margin: 16px 0 0;
   }
 }
 
