@@ -28,6 +28,7 @@
   &__button-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 24px;
     margin: 48px 0 0;
   }
@@ -49,7 +50,6 @@
       snippets section 
 ----------------------------*/
 .snippets {
-
   &__paragraph-one {
     margin: 16px 0 65px;
   }
@@ -73,13 +73,10 @@
   }
 }
 
-
-
 /*----------------------------
       workflow section 
 ----------------------------*/
 .workflow {
-
   &__paragraph {
     margin: 11px 0 90px;
   }
@@ -106,7 +103,7 @@
     flex-direction: column;
     align-items: center;
     gap: 59px;
-    margin: 131px 0 170px;
+    margin: 131px 0 161px;
   }
 }
 
@@ -119,7 +116,39 @@
   }
 }
 
-
 /*----------------------------
       footer section 
 ----------------------------*/
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px;
+  background-color: hsla(201, 11%, 66%, 0.1);
+  // opacity: 0.1;
+
+  &__icon-container {
+    width: 55px;
+    margin: 0 0 40px;
+  }
+
+  &__nav-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__nav-link {
+    line-height: 30px;
+    letter-spacing: 0.13500000536441803px;
+    color: #4c545c;
+  }
+
+  &__social-media {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 48px 0 51px;
+  }
+}
