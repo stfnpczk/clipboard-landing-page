@@ -11,8 +11,13 @@
   text-align: center;
   color: white;
   transition: 0.3s ease-in;
-  width: 240px; //use clamp eventually
-  // width: 100%; //use clamp eventually
+  // width: 240px;
+  width: clamp(240px, 64vw, 64vw);
+
+  @media only screen and (min-width: $desktop) {
+    padding: 13px 28px;
+    width: clamp(163px, 11.3194444444vw, 11.3194444444vw);
+  }
 }
 
 .button--cyan {
@@ -31,10 +36,22 @@
   font-size: 28px;
   line-height: 35px;
   letter-spacing: -0.4565216898918152px;
+
+  @media only screen and (min-width: $desktop) {
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -0.5869565010070801px;
+  }
 }
 
 .heading--three {
   font-size: 24px;
   line-height: 30px;
   letter-spacing: -0.3913043141365051px;
+}
+
+.paragraph--730 {
+  @media only screen and (min-width: $desktop) {
+    max-width: 730px;
+  }
 }
