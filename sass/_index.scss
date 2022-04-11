@@ -160,20 +160,39 @@
       workflow section 
 ----------------------------*/
 .workflow {
+  @media only screen and (min-width: $desktop) {
+    padding: 0 165px;
+  }
   &__paragraph {
     margin: 11px 0 90px;
+
+    @media only screen and (min-width: $desktop) {
+      margin: 19px 0 72px;
+    }
   }
   &__features {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 56px;
+
+    @media only screen and (min-width: $desktop) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 30px;
+      // padding: 0 165px;
+    }
   }
 
   &__feature {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media only screen and (min-width: $desktop) {
+      max-width: 350px;
+    }
   }
 
   &__heading {
@@ -187,6 +206,12 @@
     align-items: center;
     gap: 59px;
     margin: 131px 0 161px;
+
+    @media only screen and (min-width: $desktop) {
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 156px 0 161px;
+    }
   }
 }
 
