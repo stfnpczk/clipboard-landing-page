@@ -25,6 +25,7 @@
 
   @media only screen and (min-width: $desktop) {
     background: url(../images/bg-header-desktop.png) no-repeat;
+    background-size: contain;
     padding: 130px 0 152px;
   }
 
@@ -46,6 +47,10 @@
   @media only screen and (min-width: $desktop) {
     &__paragraph {
       max-width: 600px;
+
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.15000000596046448px;
     }
   }
 
@@ -95,7 +100,7 @@
     @media only screen and (min-width: $desktop) {
       display: flex;
 
-      gap: 78px; 
+      gap: 78px;
     }
   }
 
@@ -135,8 +140,19 @@
 ----------------------------*/
 .access {
   margin: 186px 0 118px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media only screen and (min-width: $desktop) {
+    margin: 93px 0 72px;
+  }
   &__paragraph {
     margin: 16px 0 64px;
+
+    @media only screen and (min-width: $desktop) {
+      margin: 19px 0 101px;
+    }
   }
 }
 
