@@ -1,9 +1,14 @@
 /*----------------------------
       layout
  ----------------------------*/
-main {
+ main {
   margin: 0 32px 170px;
   text-align: center;
+
+  @media only screen and (min-width: $desktop) {
+    margin: 0;
+    // text-align: unset;
+  }
 }
 /*----------------------------
       header section
@@ -44,7 +49,6 @@ main {
     }
   }
 
-
   &__button-container {
     display: flex;
     flex-direction: column;
@@ -75,32 +79,54 @@ main {
       snippets section 
 ----------------------------*/
 .snippets {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
 
   &__paragraph-one {
     margin: 16px 0 65px;
 
     @media only screen and (min-width: $desktop) {
-      margin: 19px 80px;
+      margin: 19px auto 80px;
     }
   }
 
-&__container {
-  @media only screen and (min-width: $desktop) {
-    display: flex;
-    gap: 110px;
+  &__container {
+    @media only screen and (min-width: $desktop) {
+      display: flex;
 
+      gap: 78px; 
+    }
   }
-}
 
   &__image-container {
     margin: 0 0 56px;
+
+    @media only screen and (min-width: $desktop) {
+      position: relative;
+      left: -32px;
+    }
+  }
+
+  &__features {
+    @media only screen and (min-width: $desktop) {
+      text-align: left;
+      max-width: 350px;
+      padding: 67px 0 0;
+      // margin: auto 0;
+    }
   }
 
   &__paragraph-two {
     margin: 10px 0 48px;
+
+    @media only screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: 0.11999999731779099px;
+
+      margin: 8px 0 56px;
+    }
   }
 }
 
