@@ -237,7 +237,14 @@
   align-items: center;
   padding: 48px;
   background-color: hsla(201, 11%, 66%, 0.1);
-  // opacity: 0.1;
+
+@media only screen and (min-width: $desktop) {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 39px 165px;
+
+}
 
   &__icon-container {
     width: 55px;
@@ -247,14 +254,33 @@
   &__nav-items {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    // align-items: center;
+    text-align: center;
+    // gap: 20px;
+
+    @media only screen and (min-width: $desktop) {
+      flex-direction: row;
+      text-align: left;
+    }
+  }
+
+  &__nav-item {
+    @media only screen and (min-width: $desktop) {
+      width: 160px;
+      align-self: flex-start;
+    }
   }
 
   &__nav-link {
     line-height: 30px;
     letter-spacing: 0.13500000536441803px;
     color: #4c545c;
+    margin: 0 0 20px;
+    display: block; 
+    
+    @media only screen and (min-width: $desktop) {
+      margin: 0 0 12px;
+    }
   }
 
   &__social-media {
@@ -262,5 +288,10 @@
     align-items: center;
     gap: 40px;
     padding: 48px 0 51px;
+
+    @media only screen and (min-width: $desktop) {
+      padding: 0;
+      align-self: center;
+    }
   }
 }
