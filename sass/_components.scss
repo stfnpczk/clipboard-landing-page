@@ -20,11 +20,17 @@
   }
 }
 
+.button:hover {
+  opacity: 0.75;
+  transform: scale(1.1);
+}
+
 .button--cyan {
   background: $strong-cyan;
   box-shadow: 0px 10px 20px rgba(137, 229, 199, 0.503305),
     inset 0px -3px 0px rgba(0, 0, 0, 0.151333);
 }
+
 
 .button--blue {
   background: #6174ff;

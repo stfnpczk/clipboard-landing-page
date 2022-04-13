@@ -277,10 +277,15 @@
     color: #4c545c;
     margin: 0 0 20px;
     display: block; 
+    transition: 0.3s ease-in;
     
     @media only screen and (min-width: $desktop) {
       margin: 0 0 12px;
     }
+  }
+
+  &__nav-link:hover {
+    color: $strong-cyan;
   }
 
   &__social-media {
@@ -294,4 +299,13 @@
       align-self: center;
     }
   }
+
+a &__social-media-icon {
+  transition: 0.3s ease-in;
+}
+
+  a:hover &__social-media-icon {
+    fill: $strong-cyan;
+  }
+
 }
