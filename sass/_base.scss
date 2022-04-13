@@ -1,11 +1,10 @@
-
 $strong-cyan: hsl(171, 66%, 44%);
 $light-blue: hsl(233, 100%, 69%);
 $dark-grayish: hsl(210, 10%, 33%);
 $grayish-blue: hsl(201, 11%, 66%);
 
-$tablet: 768px;
-$desktop: 780px;
+$desktop: 48.75rem;
+
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
 
 body {
@@ -13,7 +12,7 @@ body {
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 400;
   overflow-x: hidden;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 h1,
@@ -27,16 +26,16 @@ h6 {
 }
 
 p {
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1rem;
+  line-height: 1.625rem;
   font-weight: 400;
   color: $grayish-blue;
-  letter-spacing: 0.12px;
+  letter-spacing: 0.0075rem;
 
   @media only screen and (min-width: $desktop) {
-    font-size: 18px;
-    line-height: 30px;
-    letter-spacing: 0.15000000596046448px;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    letter-spacing: 0.0094rem;
   }
 }
 
@@ -50,4 +49,3 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
-
